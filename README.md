@@ -24,7 +24,21 @@ INVMATE is a powerful, full-stack client and invoice management system built wit
 - **Environment Variables**: dotenv for managing app configurations
 
 ---
+🧩 Dependencies
+Here are the main dependencies used in this project:
 
+bcrypt: For secure password hashing (^5.1.1)
+body-parser: Middleware to parse request bodies (^1.20.3)
+cors: Middleware for enabling Cross-Origin Resource Sharing (^2.8.5)
+dotenv: For environment variable management (^16.4.7)
+express: Web framework for Node.js (^4.21.2)
+jsonwebtoken: For generating JWT tokens (^9.0.2)
+pdfkit: For generating PDFs (^0.16.0)
+pg: PostgreSQL client for Node.js (^8.13.1)
+pg-hstore: For serializing and deserializing JSON objects (^2.3.4)
+puppeteer: Headless browser for web scraping (^24.1.1)
+sequelize: ORM for PostgreSQL (^6.37.5)
+---
 ## 💻 Installation
 
 1. Clone the repository:
