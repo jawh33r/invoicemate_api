@@ -6,7 +6,6 @@ const sequelize = require('./config/database');
 const userRoutes = require('./routes/userRoutes');
 const clientRoutes = require('./routes/clientRoutes');
 const invoiceRoutes = require('./routes/invoiceRoutes');
-const invoiceItemRoutes = require('./routes/invoiceItemRoutes');
 
 const app = express();
 const PORT = process.env.PORT || 5051;
