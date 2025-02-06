@@ -1,26 +1,26 @@
 INVMATE - Client & Invoice Management System
 INVMATE is a powerful, full-stack client and invoice management system built with Node.js, Express, and Sequelize for the backend, with a focus on managing clients and generating invoices. This project includes protected routes for client creation, updates, deletion, and more.
 
-🚀 Features
+##🚀 Features
 User Authentication: Secure login and JWT token-based authentication.
 Client Management: Create, read, update, and delete clients associated with the logged-in user.
 Invoice Management: Generate invoices with customizable fields (e.g., client information, invoice amount).
 Database: Uses PostgreSQL with Sequelize ORM for data handling.
 Environment Management: Configurable environment variables for portability.
 Error Handling: Robust logging and error management with custom messages.
-🛠️ Technologies Used
+##🛠️ Technologies Used
 Backend: Node.js, Express
 Database: PostgreSQL, Sequelize
 Authentication: JWT-based token authentication
 Logging: Winston for structured logging
 Environment Variables: dotenv for managing app configurations
-💻 Installation
+##💻 Installation
 Clone the repository:
 
 bash
 Copy
 Edit
-git clone https://github.com/your-username/invmate.git
+git clone https://https://github.com/jawh33r/invoicemate_api.git
 Navigate into the project directory:
 
 bash
