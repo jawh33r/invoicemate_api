@@ -104,11 +104,14 @@ Here are the main dependencies used in this project:
 **POST** `/api/clients`
 
 ```json
-{
-    "name": "Client Name",
-    "email": "client@example.com",
-    "phone": "123456789"
-}
+{"company_name":"Client 1",
+"fisical_code":"XXXXXXXX",
+"address":"123 Main Street",
+"zip_code":"XXXX",
+"phone":"+1234567890",
+"email":"contact@email.com",
+"country":"COUNTRY TAG",
+"user_id":0}
 ```
 Get Clients
 GET /api/clients
