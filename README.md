@@ -29,12 +29,12 @@ INVMATE is a powerful, full-stack client and invoice management system built wit
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/your-username/invmate.git
+    git clone https://github.com/jawh33r/invoicemate_api.git
     ```
 
 2. Navigate into the project directory:
     ```bash
-    cd invmate
+    cd invmateapi
     ```
 
 3. Install the dependencies:
@@ -44,7 +44,7 @@ INVMATE is a powerful, full-stack client and invoice management system built wit
 
 4. Set up environment variables by creating a `.env` file in the root directory:
     ```bash
-    PORT=5051
+    PORT=8000
     NODE_ENV=development
     DB_HOST=localhost
     DB_USER=your-database-username
@@ -59,7 +59,7 @@ INVMATE is a powerful, full-stack client and invoice management system built wit
 
 6. Start the application:
     ```bash
-    npm start
+    npm run dev
     ```
 
 ---
@@ -95,6 +95,7 @@ INVMATE is a powerful, full-stack client and invoice management system built wit
     "email": "client@example.com",
     "phone": "123456789"
 }
+```
 Get Clients
 GET /api/clients
 
