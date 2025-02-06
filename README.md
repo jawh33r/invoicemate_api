@@ -1,86 +1,99 @@
-INVMATE - Client & Invoice Management System
+# INVMATE - Client & Invoice Management System
+
 INVMATE is a powerful, full-stack client and invoice management system built with Node.js, Express, and Sequelize for the backend, with a focus on managing clients and generating invoices. This project includes protected routes for client creation, updates, deletion, and more.
 
-##🚀 Features
-User Authentication: Secure login and JWT token-based authentication.
-Client Management: Create, read, update, and delete clients associated with the logged-in user.
-Invoice Management: Generate invoices with customizable fields (e.g., client information, invoice amount).
-Database: Uses PostgreSQL with Sequelize ORM for data handling.
-Environment Management: Configurable environment variables for portability.
-Error Handling: Robust logging and error management with custom messages.
-##🛠️ Technologies Used
-Backend: Node.js, Express
-Database: PostgreSQL, Sequelize
-Authentication: JWT-based token authentication
-Logging: Winston for structured logging
-Environment Variables: dotenv for managing app configurations
-##💻 Installation
-Clone the repository:
+---
 
-bash
-Copy
-Edit
-git clone https://https://github.com/jawh33r/invoicemate_api.git
-Navigate into the project directory:
+## 🚀 Features
 
-bash
-Copy
-Edit
-cd invmate
-Install the dependencies:
+- **User Authentication**: Secure login and JWT token-based authentication.
+- **Client Management**: Create, read, update, and delete clients associated with the logged-in user.
+- **Invoice Management**: Generate invoices with customizable fields (e.g., client information, invoice amount).
+- **Database**: Uses PostgreSQL with Sequelize ORM for data handling.
+- **Environment Management**: Configurable environment variables for portability.
+- **Error Handling**: Robust logging and error management with custom messages.
+  
+---
 
-bash
-Copy
-Edit
-npm install
-Set up environment variables by creating a .env file in the root directory:
+## 🛠️ Technologies Used
 
-bash
-Copy
-Edit
-PORT=5051
-NODE_ENV=development
-DB_HOST=localhost
-DB_USER=your-database-username
-DB_PASS=your-database-password
-DB_NAME=invmate
-Run the database migration to set up the schema:
+- **Backend**: Node.js, Express
+- **Database**: PostgreSQL, Sequelize
+- **Authentication**: JWT-based token authentication
+- **Logging**: Winston for structured logging
+- **Environment Variables**: dotenv for managing app configurations
 
-bash
-Copy
-Edit
-npx sequelize-cli db:migrate
-Start the application:
+---
 
-bash
-Copy
-Edit
-npm start
-📡 API Endpoints
-User Routes
-POST /api/users/login: User login to get JWT token (protected routes require this token).
-Client Routes (Protected)
-POST /api/clients: Create a new client (authentication required).
-GET /api/clients: Get all clients for the logged-in user (authentication required).
-PUT /api/clients/:id: Update a specific client (authentication required).
-DELETE /api/clients/:id: Delete a client (authentication required).
-Invoice Routes
-POST /api/invoices: Generate a new invoice (authentication required).
-📝 Example Requests
-Create a Client
-POST /api/clients
+## 💻 Installation
 
-json
-Copy
-Edit
-{  "company_name":"jhon doe XD",
-   "fisical_code":"XXXXXXX",
-   "address":"XXXXXX XXXX",
-   "zip_code":"XXXX",
-   "phone":"+1234567890",
-   "email":"contact@email.com",
-   "country":"COUNTRY TAG",
-   "user_id": 0
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/invmate.git
+    ```
+
+2. Navigate into the project directory:
+    ```bash
+    cd invmate
+    ```
+
+3. Install the dependencies:
+    ```bash
+    npm install
+    ```
+
+4. Set up environment variables by creating a `.env` file in the root directory:
+    ```bash
+    PORT=5051
+    NODE_ENV=development
+    DB_HOST=localhost
+    DB_USER=your-database-username
+    DB_PASS=your-database-password
+    DB_NAME=invmate
+    ```
+
+5. Run the database migration to set up the schema:
+    ```bash
+    npx sequelize-cli db:migrate
+    ```
+
+6. Start the application:
+    ```bash
+    npm start
+    ```
+
+---
+
+## 📡 API Endpoints
+
+### **User Routes**
+
+- `POST /api/users/login`: User login to get JWT token (protected routes require this token).
+  
+### **Client Routes (Protected)**
+
+- `POST /api/clients`: Create a new client (authentication required).
+- `GET /api/clients`: Get all clients for the logged-in user (authentication required).
+- `PUT /api/clients/:id`: Update a specific client (authentication required).
+- `DELETE /api/clients/:id`: Delete a client (authentication required).
+
+### **Invoice Routes**
+
+- `POST /api/invoices`: Generate a new invoice (authentication required).
+  
+---
+
+## 📝 Example Requests
+
+### **Create a Client**
+
+**POST** `/api/clients`
+
+```json
+{
+    "name": "Client Name",
+    "email": "client@example.com",
+    "phone": "123456789"
 }
 Get Clients
 GET /api/clients
