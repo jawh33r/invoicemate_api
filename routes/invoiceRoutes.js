@@ -180,14 +180,13 @@ router.get('/', auth, async(req, res) => {
 // Update Invoice
 router.put('/:id', auth, async(req, res) => {
     try {
-
         const [updated] = await Invoice.update(req.body, {
             where: { id: req.params.id, user_id: req.user.id },
         });
 
         await Promise.all(req.body.invoiceItems.map(async item => {
             await InvoiceItem.update(item, {
-                where: { invoice_id: req.params.id },
+                where: { id: item.id, invoice_id: req.params.id },
             });
         }));
 
