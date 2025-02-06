@@ -20,7 +20,6 @@ app.use(express.urlencoded({ limit: '20mb', extended: true }));
 app.use('/api/users', userRoutes);
 app.use('/api/clients', clientRoutes);
 app.use('/api/invoices', invoiceRoutes);
-app.use('/api/invoice-items', invoiceItemRoutes);
 
 // Logging utility functions
 const logger = {
