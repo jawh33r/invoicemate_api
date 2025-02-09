@@ -12,8 +12,8 @@ const Invoice = sequelize.define('invoice', {
     invoice_id: {
         type: DataTypes.TEXT,
         allowNull: true,
-        unique: true,
-        autoIncrement: true,
+        unique: true
+
     },
     company_id: {
         type: DataTypes.INTEGER,
